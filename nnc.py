@@ -106,7 +106,7 @@ https://raw.githubusercontent.com/makeyourownneuralnetwork/makeyourownneuralnetw
 """
 
 # 读取训练数据
-training_data_file = open('nnc/mnist_train_100.csv', 'r')
+training_data_file = open('mnist/mnist_train_100.csv', 'r')
 training_data_list = training_data_file.readlines()
 training_data_file.close()
 
@@ -120,7 +120,7 @@ for record in training_data_list:
     nnc.train(inputs, targets)
 
 # 读取测试数据
-test_data_file = open('nnc/mnist_test_10.csv', 'r')
+test_data_file = open('mnist/mnist_test_10.csv', 'r')
 test_data_list = test_data_file.readlines()
 test_data_file.close()
 
